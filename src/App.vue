@@ -29,7 +29,7 @@
                 </v-col>
                 <v-col cols="12" sm="12" md="5">
                     <div class="align-content-center">
-                        <v-img contain src="/img/ayam1.svg"></v-img>
+                        <v-img contain src="/img/OPTIMIZE/ayam1.svg"></v-img>
                     </div>
                 </v-col>
             </v-row>
@@ -57,7 +57,7 @@
             <carousel :items='3' :nav='false' :dots="false">
                 <v-card elevation="3" class="pa-3 ma-3">
                     <v-card height="250px" class="d-flex align-center" elevation="0">
-                        <v-img height="200px" contain src="/img/ayam.png"></v-img>
+                        <v-img height="200px" contain src="/img/OPTIMIZE/ayam.png"></v-img>
                     </v-card>
                     <span class="display-1 nunito">Ayam Hidup</span>
                     <p class="text-justify">
@@ -66,7 +66,7 @@
                 </v-card>
                 <v-card elevation="3" class="pa-3 ma-3">
                     <v-card height="250px" class="d-flex align-center" elevation="0">
-                        <v-img height="200px" contain src="/img/raw3.png"></v-img>
+                        <v-img height="200px" contain src="/img/OPTIMIZE/raw3.png"></v-img>
                     </v-card>
                     <span class="display-1 nunito">Ayam Karkas</span>
                     <p class="text-justify">
@@ -75,7 +75,7 @@
                 </v-card>
                 <v-card elevation="3" class="pa-3 ma-3">
                     <v-card height="250px" class="d-flex align-center" elevation="0">
-                        <v-img height="200px" contain src="/img/part.png"></v-img>
+                        <v-img height="200px" contain src="/img/OPTIMIZE/part.png"></v-img>
                     </v-card>
                     <span class="display-1 nunito">Ayam Potong</span>
                     <p class="text-justify">
