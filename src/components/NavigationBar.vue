@@ -1,19 +1,22 @@
 <template>
-<v-app-bar app color="elevation-0 primary" hide-on-scroll>
-    <v-app-bar-nav-icon>
-        <v-img src="@/assets/logo-bas-white.svg" alt="logo PT. BUNGSU AMANAH SEJAHTERA" srcset="" aspect-ratio="1" contain />
-    </v-app-bar-nav-icon>
-    <v-toolbar-title>
-        <span class="white--text nunito font-weight-bold">PT. BUNGSU AMANAH SEJAHTERA</span>
-    </v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items>
-        <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Produk</span></v-btn>
-        <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Kegiatan</span></v-btn>
-        <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Kontak</span>
-        </v-btn>
-    </v-toolbar-items>
-</v-app-bar>
+<div id="navigation">
+    <v-app-bar app color="elevation-0 primary" hide-on-scroll :collapse='collapse'>
+        <v-app-bar-nav-icon>
+            <v-img src="@/assets/logo-bas-white.svg" alt="logo PT. BUNGSU AMANAH SEJAHTERA" srcset="" aspect-ratio="1" contain />
+        </v-app-bar-nav-icon>
+        <v-toolbar-title>
+            <span class="white--text nunito font-weight-bold hidden-sm-and-down">PT. BUNGSU AMANAH SEJAHTERA</span>
+            <span class="white--text nunito font-weight-bold hidden-md-and-up">PT. B A S</span>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items class="hidden-sm-and-down">
+            <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Produk</span></v-btn>
+            <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Kegiatan</span></v-btn>
+            <v-btn class="no-hover" depressed color="primary" dark><span class="border-bottom nunito">Kontak</span>
+            </v-btn>
+        </v-toolbar-items>
+    </v-app-bar>
+</div>
 </template>
 
 <style scoped>
@@ -44,5 +47,11 @@
 <script>
 export default {
     name: "navbar",
+    props: {
+        collapse: {
+            type: Boolean,
+            default: false
+        }
+    }
 };
 </script>
